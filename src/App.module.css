@@ -8,8 +8,9 @@
   }
 }
 
-.sidebar{
- 
+.tableHeader{
+  display: flex;
+  flex-direction: row;
 }
 
 th {
@@ -24,14 +25,12 @@ thead {
     background-color: white;
 }
 
-table {
-  width: 100vh;
-}
-
 .tablecContainer{
     padding-left: 30px;
     padding-right: 30px;
 }
+
+
 
 .page{
   color: #516378;
