@@ -1,26 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Table from './components/Table';
+import Sidebar from './components/Sidebar';
+import style from './App.module.css';
+import { type } from 'os';
 
-function App() {
+
+
+
+const App = () => {
+  const headers : string[] = ["name","mobile no","project name", "date",""];
+  const TableData : object = {
+    user1 : ["User1", "+38082374637", "Project1", "20.01.2020"],
+    user2 : ["User2", "+38082374637", "Project2", "20.11.2020"],
+    user3 : ["User2", "+38082374637", "Project2", "20.11.2020"],
+    user4 : ["User2", "+38082374637", "Project2", "20.11.2020"],
+    user5 : ["User2", "+38082374637", "Project2", "20.11.2020"],
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <div className={style.page}>
+        <div className={style.sidebar}>
+          <Sidebar title="YozmaTech" paragraph="elements"/>
+        </div>
+        <div className={style.tablecContainer}>
+          <h1>My Leads</h1>
+          <hr></hr>
+          <div className={style.table}>
+            <Table props={headers} data={TableData}/>
+          </div>
+        </div>
+      </div>
+  )
 }
 
 export default App;

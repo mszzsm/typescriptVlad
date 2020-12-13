@@ -1,0 +1,20 @@
+table {
+   
+     border-collapse: collapse;
+  border-spacing: 0;
+  width: 100vh;
+  border: 1px solid #ddd;
+}
+
+.tablecContainer{
+    padding: 30px
+}
+
+tr:nth-child(even) {
+  background-color: #f7f9fa;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
