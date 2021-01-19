@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Modal.module.css'
+import style from './Modal.css'
 
 interface Modal {
     name: string,
@@ -27,29 +27,32 @@ const handleSubmit = (event: any) => {
 };
 
 
-
 const Modal = () => {
-    
     return (
-        <div className={style.modal}>
-            <form action="" className={style.form} onSubmit={handleSubmit}>
-                <label htmlFor="">Name
-                    <input value={user.name} type="text" id="name"/>
-                </label>
-                <label htmlFor="">Phone
-                <input value={user.phone} type="text" id="phone"/>
-                </label>
-                <label htmlFor="">Project
-                <input value={user.project} type="text" id="project"/>
-                </label>
-                <label htmlFor="">date
-                <input value={user.date} type="text" id="date"/>
-                </label>
-                <label htmlFor="">Add new user
-                </label>
-                <input type="submit"/>
+        <div className={'modal'}>
+            <form action="" className={'form'} onSubmit={handleSubmit}>
+                <div>
+                    <label htmlFor="">Name
+                        <input value={user.name} type="text" id="name"/>
+                    </label>
+                </div>
+                <div>
+                    <label htmlFor="">Phone
+                        <input value={user.phone} type="text" id="phone"/>
+                    </label>
+                </div>
+                <div>
+                    <label htmlFor="">Project
+                        <input value={user.project} type="text" id="project"/>
+                    </label>
+                </div>
+                <div>
+                    <label htmlFor="">date
+                        <input value={user.date} type="text" id="date"/>
+                    </label>
+                </div>
+                <input type="submit" name="Add new user"/>
             </form>
-           <h1>This is modal window</h1>
         </div>
     )
 }

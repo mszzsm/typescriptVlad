@@ -1,0 +1,86 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.tablecContainer{
+    padding: 30px
+}
+
+.statusConverted{
+  padding: 3px;
+  border-radius: 10%;
+  background-color: green;
+  color: white;
+}
+
+.statusBlocked{
+  padding: 3px;
+  border-radius: 10%;
+  background-color: grey;
+  color: white;
+}
+
+.statusReported{
+  padding: 3px;
+  border-radius: 10%;
+  background-color: red;
+  color: white; 
+}
+
+.statusNew{
+  padding: 3px;
+  border-radius: 10%;
+  background-color: blueviolet;
+  color: white; 
+}
+
+
+.btnDelete {
+  border-radius: 5%;
+	background: rgb(255, 201, 201);
+	color: inherit;
+	border: none;
+	padding: 5px;
+	font: inherit;
+	cursor: pointer;
+  outline: inherit;
+  transition: transform .2s;
+}
+
+.btnDelete:hover{
+  background:  rgb(255, 181, 181);
+}
+
+img {
+  border-radius: 50%;
+}
+
+tr{
+  border: 10px;
+  border-color: black;
+  background-color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f7f9fa;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tbody tr:hover {
+    transform: scale(1.05);
+}
+
+button{
+
+}
+
+tbody tr {
+    transition: transform .2s;
+}

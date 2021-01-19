@@ -7,11 +7,11 @@ const UPDATE_NEW_FRIEND_TEXT = 'UPDATE-NEW-FRIEND-TEXT'
 const store = {
     _state: {
         UsersData : [
-            { id:1, user : "User1", status : "", phone: "+38082374637", project : "Project1", date: "20.01.2020", picture : "https://picsum.photos/40/?random=1"},
-            { id:2, user : "User2", status : "", phone: "+38082374637", project : "Project2", date: "20.11.2020", picture : "https://picsum.photos/40/?random=2"},
-            { id:3, user : "User2", status : "", phone: "+38082374637", project : "Project2", date: "20.11.2020", picture : "https://picsum.photos/40/?random=3"},
-            { id:4, user : "User2", status : "", phone: "+38082374637", project : "Project2", date: "20.11.2020", picture : "https://picsum.photos/40/?random=4"},
-            { id:5, user : "User2", status : "", phone: "+38082374637", project : "Project2", date: "20.11.2020", picture : "https://picsum.photos/40/?random=5"},
+            { id:1, user : "User1", status : "new", phone: "+38082374637", project : "Project1", date: "20.01.2020", picture : "https://picsum.photos/40/?random=1"},
+            { id:2, user : "User2", status : "reported", phone: "+38082374637", project : "Project2", date: "20.11.2020", picture : "https://picsum.photos/40/?random=2"},
+            { id:3, user : "User2", status : "converted", phone: "+38082374637", project : "Project2", date: "20.11.2020", picture : "https://picsum.photos/40/?random=3"},
+            { id:4, user : "User2", status : "blocked", phone: "+38082374637", project : "Project2", date: "20.11.2020", picture : "https://picsum.photos/40/?random=4"},
+            { id:5, user : "User2", status : "new", phone: "+38082374637", project : "Project2", date: "20.11.2020", picture : "https://picsum.photos/40/?random=5"},
         ],
         SideBar: {
         },
