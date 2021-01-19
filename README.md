@@ -1,6 +1,4 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Type Script cource app 
 
 Try to create a similar table (ignore top/left bars/tripple dot popover)
 Add all the components (avatar, texts, labels)
