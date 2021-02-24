@@ -1,16 +1,15 @@
 import { useState } from "react";
 
-// FIXME: Add user type to all the places where `any` was used
+//TODO: Add user type to all the places where `any` was used
 type User = {}
 
 const readUserData = () => {
   const localStorageContent = localStorage.getItem("data")
-  //
   const userData = (localStorageContent && JSON.parse(localStorageContent)) ?? [];
 
   if (!Array.isArray(userData)) {
     return []
-  }
+}
   return userData
 }
 
