@@ -35,22 +35,23 @@ const Table: React.FC<Table> = ({ props, storage }) => {
   const listItems = props.map((headers) => <th>{headers}</th>);
 
   const Users = userData.map((user, key) => (
+  
     <tr>
       <th>
-        <img src={user.picture} />
+        <img src={JSON.parse(user).picture} />
       </th>
       <th>
-        {user.user}{" "}
-        <span className={getUserStatus(user.status)}>{user.status}</span>{" "}
+        {JSON.parse(user).user}{" "}
+        <span className={getUserStatus(JSON.parse(user).status)}>{user.status}</span>{" "}
       </th>
-      <th>{user.phone}</th>
-      <th>{user.project}</th>
-      <th>{user.date}</th>
+      <th>{JSON.parse(user).phone}</th>
+      <th>{JSON.parse(user).project}</th>
+      <th>{JSON.parse(user).date}</th>
       <th>
         <button
           className={'btnDelete'}
           onClick={(event) => {
-            removeUserById(user.id);
+            removeUserById(JSON.parse(user).id);
           }}
         >
           DELETE USER
@@ -66,8 +67,7 @@ const Table: React.FC<Table> = ({ props, storage }) => {
         <button
           onClick={(event) => {
             setModalIsVisible(true)
-          }}
-        >
+          }}>
           add User
         </button>
       </div>

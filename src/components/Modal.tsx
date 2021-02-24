@@ -11,7 +11,8 @@ interface Modal {
 let user: any = []
 const handleSubmit = (event: any) => {
     event.preventDefault();
-    let Users = JSON.parse(localStorage.getItem('data')|| '{}')
+    
+    let Users = JSON.parse(localStorage.getItem('data')|| '[]')
     let newUser = {
         id: Users.length,
         user: event.target.name.value,
@@ -21,7 +22,8 @@ const handleSubmit = (event: any) => {
         picture: "https://picsum.photos/id/600/40",
         status: "new",
     }
-    Users.push(newUser)
+    
+    Users.push(JSON.stringify(newUser))
     localStorage.setItem('data', JSON.stringify(Users));
     window.location.reload(false);
 };

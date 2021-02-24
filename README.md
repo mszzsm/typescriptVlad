@@ -7,4 +7,4 @@ Stick to the colors more or less, but ignore the actual sizes of the components 
 Don't use any UI libraries/components (for now)
 
 
-
+TODO: Add user type to all the places where `any` was used
